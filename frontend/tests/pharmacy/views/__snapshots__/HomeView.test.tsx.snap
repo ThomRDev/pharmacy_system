@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing al componente de <HomeView /> Deberia renderizar hacer match como el snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container css-t78dm4-MuiGrid-root"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container css-1bbjngc-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-p79t05"
+      >
+        <div
+          class="MuiBox-root css-7cxx3r"
+        >
+          <h5
+            class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+          >
+            Productos Registrados
+          </h5>
+        </div>
+        <div
+          class="MuiBox-root css-uozptx"
+        >
+          <canvas
+            aria-label="canvas-registrados"
+            height="0"
+            role="img"
+            style="display: block; box-sizing: border-box; height: 0px; width: 0px;"
+            width="0"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-p79t05"
+      >
+        <div
+          class="MuiBox-root css-7cxx3r"
+        >
+          <h5
+            class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+          >
+            Productos mas vendidos
+          </h5>
+        </div>
+        <div
+          class="MuiBox-root css-uozptx"
+        >
+          <canvas
+            aria-label="canvas-mas-vendido"
+            height="0"
+            role="img"
+            style="display: block; box-sizing: border-box; height: 0px; width: 0px;"
+            width="0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

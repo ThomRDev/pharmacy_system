@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  # nombre de mi container
+  mysql_db_v8:
+    # image: mysql:latest
+    image: mysql:8.0.29
+    # https://dev.mysql.com/doc/refman/8.0/en/mysqld.html
+    # mapeo para incluir un codigo sql de inicialización 
+    volumes:
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    # command:
+    #   [
+    #     "mysqld",
+    #     "--character-set-server=utf8",
+    #     "--collation-server=utf8_unicode_ci",
+    #     "--init-file /docker-entrypoint-initdb.d/init.sql"
+    #   ]
+    command: "--init-file /docker-entrypoint-initdb.d/init.sql"
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: my_project_db
+      MYSQL_ROOT_USER: thomtwd
+      MYSQL_USER: thomtwd
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_PASSWORD: secret"
+
+# docker-compose up -d
+# docker logs <id-container>
